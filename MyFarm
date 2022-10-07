@@ -1,0 +1,30 @@
+package Chapter3;
+
+import javax.print.DocFlavor;
+import java.util.ArrayList;
+
+public class MyFarm {
+    public static void main(String[] args) {
+        Duck d1 = new Duck("Duck","Donald", "male", 3.2,5);
+        Duck d2 = new Duck("Duck", "Cheese", "female", 3.6, 5);
+        Cow d3 = new Cow("Cow","Molly", "female",1600, 3 );
+        Chicken d4 = new Chicken("Chicken", "Albert", "male", 1.6, 2 );
+        Chicken d5 = new Chicken("Chicken","Amelia", "female", 1.8, 4 );
+        Chicken d6 = new Chicken("Chicken","Dixie","female",1.7, 4 );
+        ArrayList a = new ArrayList();
+        a.add(d1);
+        System.out.println(d1);
+        a.add(d2);
+        System.out.println(d2);
+        a.add(d3);
+        System.out.println(d3);
+        a.add(d4);
+        System.out.println(d4);
+        a.add(d5);
+        System.out.println(d5);
+        a.add(d6);
+        System.out.println(d6);
+
+
+    }
+}
