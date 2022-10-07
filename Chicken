@@ -1,0 +1,20 @@
+package Chapter3;
+
+public class Chicken extends FarmAnimal{
+    public Chicken(String type,String name, String gender, double weight, int age) {
+        super(type,name, gender, weight, age);
+    }
+
+    public  String makeSound() {
+        if (getGender().equals("male"))
+            return "Cock-a-Doodle-doo";
+        else {
+            return "Cluck Cluck";
+        }
+    }
+    @Override
+    public String FeedingLoadingSchedule() {
+        return getName()+": 8am-4pm";
+
+    }
+}
