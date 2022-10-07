@@ -1,0 +1,15 @@
+package Chapter3;
+
+public class Cow extends FarmAnimal {
+    public Cow(String type, String name, String gender, double weight, int age) {
+        super(type,name, gender, weight, age);
+    }
+    @Override
+    public String makeSound(){
+        return"Moo Moo";
+    }
+    @Override
+    public String FeedingLoadingSchedule() {
+        return getName()+ ": 6am-4pm";
+    }
+}
